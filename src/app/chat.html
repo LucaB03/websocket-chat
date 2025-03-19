@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="chat.css">
+    <title>Webchat</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Webchat</h1>
+        <div class="user-info">
+            <div id="user-short" class="user-avatar">JS</div>
+            <span id="user-name">John Smith</span>
+            <button class="logout-btn" id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <input type="text" class="search-box" placeholder="Search chats...">
+            </div>
+            <div class="chat-list" id="chat-list">
+                <!-- Chat list will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="main-chat">
+            <div class="chat-header">
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <div class="chat-avatar" id="current-chat-avatar">?</div>
+                <div class="chat-info">
+                    <div class="chat-name" id="current-chat-name">Select a chat</div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be populated by JavaScript -->
+            </div>
+
+            <div class="chat-input-area">
+                <textarea class="chat-input" id="message-input" placeholder="Type a message..." rows="1"></textarea>
+                <button class="send-btn" id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
